@@ -10,10 +10,16 @@ App({
         //   此处请填入环境 ID, 环境 ID 可打开云控制台查看
         //   如不填则使用默认环境（第一个创建的环境）
         // env: 'my-env-id',
+        env:'yueda-0g7hp5b16ff067e6',
         traceUser: true,
       });
+      
     }
 
     this.globalData = {};
+  },
+  //小程序启动时触发
+  onShow(){
+    // console.log('haha')
   }
 });

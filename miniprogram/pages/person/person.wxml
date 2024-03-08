@@ -1,0 +1,4 @@
+<view class="log">
+  <text class="id"></text>
+</view>
+<my-test max="9"></my-test>

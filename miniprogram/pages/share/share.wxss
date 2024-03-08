@@ -1,0 +1,36 @@
+/* pages/share/share.wxss */
+/* .box{
+  height: 200rpx;
+  background-color: lightblue;
+  display: flex;
+} 
+.text-container{
+    width: 100rpx; /* 设置文字容器的宽度 
+    white-space: nowrap; /* 禁止文字换行 
+    overflow: hidden; /* 隐藏溢出的文字内容 
+    text-overflow: ellipsis; /* 使用省略号来表示截断的文字 
+} */
+.comment-item{
+  width: 700rpx;
+  display: flex;
+  flex-direction: column;
+  /* 外边框 */
+  padding: 15rpx;
+  border: 1rpx solid lightblue;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  width: 375rpx;
+}
+.photo image{
+  width: 300rpx;
+  height: 300rpx;
+  /* background-color: hotpink; */
+  /* 去除图片之间的间距 */
+  display: block; 
+  /* 图片和文字之间的间距 */
+  margin-bottom: 15rpx;
+}
+.content{
+  font-size: 24rpx;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<!--components/test/test1.wxml-->
+<text>components/test/test1.wxml</text>
+<view>count的值是：{{max}} {{Max}} {{count}}</view>
+<button bind:tap="add">+1</button>
+<view style="background-color:rgb({{fullColor}});" class="colorBox">颜色值：{{fullColor}}</view>
+<button size="mini" type="default" bind:tap="changeR">R</button>
+<button size="mini" type="primary" bind:tap="changeG">G</button>
+<button size="mini" type="warn" bind:tap="changeB">B</button>

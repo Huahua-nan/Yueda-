@@ -1,0 +1,81 @@
+<!-- pages/home/home.wxml
+<view class="container1">
+  <!-- <image src="../../pages/img/source/location.png" mode="widthFix"></image>
+  <text>{{info}}</text> 
+
+</view>
+<button type="primary" bindtap="btnTapHandler">点击</button>
+<button type="primary" bindtap="countchange">+1</button>
+<button type="primary" bindtap="btnTap2" data-info="{{2}}">+2</button>
+<input value="{{msg}}" bindinput="inputHandler"></input>
+
+<!--条件渲染
+<view wx:if="{{type===1}}">男</view>
+<view wx:elif="{{type===2}}">女</view>
+<view wx:else="">保密</view>
+
+<!-- <block wx:if="{{false}}">
+  <view>view1</view>
+  <view>view2</view>
+</block> 
+
+<view hidden="{{flag}}">条件为true的时候隐藏元素</view>
+
+<!-- 列表渲染 
+<view wx:for="{{arr1}}">
+索引是：{{index}},item项是:{{item}}
+</view>
+
+<view wx:for="{{userlist}}" wx:key="id">{{item.name}}
+</view>
+
+<button bind:tap="getInfo">发起GET请求</button> -->
+<view class="header-modular" wx:if="{{now}}" bind:tap="Gotoweather">
+	<image class="bg-wave" src="../../pages/img/QWeather-Icons-1.6.0/icons/bg_wave.gif"></image>
+	<view class="row">
+		<view class="row location-wrap" bindtap="selectLocation">
+			<!-- <image class="icon" src=""></image> -->
+			<view class="title">{{City}} {{County}}</view>
+		</view>
+ 
+	</view>
+	<view class="row">
+		<view class="tmp">{{now.temp}}°</view>
+		<image class="icon-weather" src="../../pages/img/QWeather-Icons-1.6.0/icons/{{now.icon}}.svg"></image>
+	</view>
+	<view class="tips-wrap">
+		<view class="tips ">{{now.windDir}} {{now.windScale}}级</view>
+		<view class="tips ">湿度 {{now.humidity}}%</view>
+		<view class="tips ">气压 {{now.pressure}}Pa</view>
+	</view>
+</view>
+
+<!-- <view class="banner">
+  <swiper class="swip_main" indicator-dots="true" autoplay="true" interval="6000"  circular="true">
+    <block wx:for="{{mglist}}" wx:key="id">
+      <swiper-item>
+        <image src="{{item.banner}}" style="width:100%;height:100%;" mode="scaleToFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+<view class="adviser" >
+  <block wx:for="{{adviserbg}}" wx:key="id" class="block1">
+    <image src="{{item.adviser}}" mode="widthFix" class="adviserbg" style="border-radius: 50rpx"></image>
+  </block>
+  <button bindtap="Gotoweather" class="btn" style="width: 150rpx; height: 150rpx; margin-left: 310rpx;text-align: center;">生成</button>
+  <view class="clothes">
+    
+  </view>
+  <view class="clothes2">
+    
+  </view>
+  <view class="clothes3">
+    
+  </view>
+  <view class="clothes4">
+    
+  </view>
+</view>
+<!-- <navigator url="../../pages/weather/weather" open-type="switchTab">导航到weather</navigator> -->
+

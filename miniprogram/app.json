@@ -1,29 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/getOpenId/index",
-    "pages/getMiniProgramCode/index",
-    "pages/deployService/index",
-    "pages/createCollection/index",
-    "pages/uploadFile/index",
-    "pages/selectRecord/index",
-    "pages/updateRecord/index",
-    "pages/updateRecordResult/index",
-    "pages/updateRecordSuccess/index",
-    "pages/sumRecord/index",
-    "pages/sumRecordResult/index",
-    "pages/cloudBackend/index",
-    "pages/singleTemplate/index",
-    "pages/web/index"
+    "pages/home/home",
+    "pages/share/share",
+    "pages/person/person",
+    "pages/weather/weather"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#d9e9e7",
+    "navigationBarTitleText": "悦搭智能建议穿搭系统", 
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
+  "tabBar":{
+    "color": "#111111",
+    "selectedColor": "#90a391",
+    "list":[
+        {"pagePath": "pages/home/home","text":"主页","iconPath": "/pages/img/主页.png","selectedIconPath": "/pages/img/主页_2.png"},
+        {"pagePath": "pages/share/share","text":"分享","iconPath": "/pages/img/帖子.png","selectedIconPath": "/pages/img/帖子_2.png"},
+        {"pagePath": "pages/person/person","text":"个人","iconPath": "/pages/img/个人.png","selectedIconPath": "/pages/img/个人_2.png"}
+    ]
+},
   "sitemapLocation": "sitemap.json",
   "style": "v2",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "允许微信小程序获取用户的信息"
+    }
+  }
 }

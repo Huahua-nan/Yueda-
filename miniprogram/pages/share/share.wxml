@@ -1,0 +1,23 @@
+<!--pages/share/share.wxml-->
+<!-- <text>pages/share/share.wxml</text> -->
+<!-- <view>{{m1.toUpper(username)}}</view>
+<text class="text-container">12444444444444123123</text>
+<view class="box" wx:for="{{colorList}}" wx:key="id">
+  {{item.color}}
+</view> -->
+<!-- 
+<wxs module="m1">
+  module.exports.toUpper = function(str){
+    return str.toUpperCase()
+  }
+<!-- </wxs> wx:if="{{item._id==='2da1518365e936fb0122680878d78188'}}" -->
+
+<view class="comment-item" wx:for="{{commentList}}" wx:key="_id" >
+  <view class="photo">
+    <image src="{{item.photo}}" mode="aspectFill"></image>
+  </view>
+  <view class="content">
+    <text>{{item.title}}</text>
+  </view>
+  <view></view>
+</view> 
